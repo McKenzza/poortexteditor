@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PoorTextEditor</title>
+
+    <link rel="stylesheet" href="static/css/poortexteditor.css" />
+    <link rel="stylesheet" href="static/css/icon.min.css">
+</head>
+<body>
+    <div class="poor-text-editor">
+        <div class="pte options">
+            <!-- Options -->
+            <button id="pte-bold" class="pte button format">
+                <i class="ui bold icon"></i>
+            </button>
+            <button id="pte-italic" class="pte button format">
+                <i class="ui italic icon"></i>
+            </button>
+            <button id="pte-underline" class="pte button format">
+                <i class="ui underline icon"></i>
+            </button>
+            <button id="pte-strikethrough" class="pte button format">
+                <i class="ui strikethrough icon"></i>
+            </button>
+
+            <!-- List -->
+            <button id="pte-orderedlist" class="pte button pte-orderedlist">
+                <i class="ui list ol disabled icon"></i>
+            </button>
+            <button id="pte-unorderedlist" class="pte button pte-unorderedlist">
+                <i class="ui list disabled icon"></i>
+            </button>
+
+            <!-- Undo/Redo -->
+            <button id="pte-undo" class="pte button pte-undo">
+                <i class="ui undo disabled icon"></i>
+            </button>
+            <button id="pte-redo" class="pte button pte-redo">
+                <i class="ui redo disabled icon"></i>
+            </button>
+        </div>
+        <div class="pte advanced options">
+
+            <!-- Alignment -->
+            <button id="pte-alignleft" class="pte button advanced align">
+                <i class="ui align left icon"></i>
+            </button>
+            <button id="pte-aligncenter" class="pte button advanced align">
+                <i class="ui align center icon"></i>
+            </button>
+            <button id="pte-alignright" class="pte button advanced align">
+                <i class="ui align right icon"></i>
+            </button>
+            <button id="pte-alignjustify" class="pte button advanced align">
+                <i class="ui align justify icon"></i>
+            </button>
+
+            <!-- Headers -->
+            <select name="pte-headers" id="pte-headers" class="pte select headers">
+                <option value="H1">H1</option>
+                <option value="H2">H2</option>
+                <option value="H3">H3</option>
+                <option value="H4">H4</option>
+                <option value="H5">H5</option>
+                <option value="H6">H6</option>
+            </select>
+
+
+            
+            <button id="pte-image" class="pte advanced button pte-image">
+                <i class="ui image disabled icon"></i>
+            </button>
+            <!-- Link/Unlink -->
+            <button id="pte-link" class="pte advanced button pte-link">
+                <i class="ui linkify disabled icon"></i>
+            </button>
+            <button id="pte-unlink" class="pte advanced button pte-unlink">
+                <i class="ui unlink disabled icon"></i>
+            </button>
+        </div>
+
+        <!-- Text Input -->
+        <div id="pte-text-input" class="pte text-input" contenteditable="true"></div>
+    </div>
+</body>
+<script src="static/js/poortexteditor.js"></script>
+</html>

@@ -1,0 +1,49 @@
+body {
+    background-color: rgb(50, 139, 255);
+}
+
+/* Poor Text Editor */
+.poor-text-editor {
+    background-color: aliceblue;
+    width: 80vmin;
+    padding: 15px 30px;
+    border-radius: 15px;
+}
+
+.pte.options {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    padding-top: 1px;
+}
+
+.pte.button {
+    height: 28px;
+    width: 28px;
+    place-items: center;
+    border-radius: 3px;
+    border: none;
+    background-color: aliceblue;
+    outline: none;
+}
+
+.pte.select.headers {
+    height: 28px;
+    place-items: center;
+    border-radius: 3px;
+    border: 1px;
+    background-color: aliceblue;
+    outline: none;
+}
+
+.pte.text-input {
+    margin-top: 10px;
+    border: 1px solid #dddddd;
+    padding: 20px;
+    height: 20vh;
+}
+
+.pte.button.active {
+    background-color: rgb(185, 185, 185);
+}
