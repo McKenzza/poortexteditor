@@ -5,9 +5,13 @@ body {
 /* Poor Text Editor */
 .poor-text-editor {
     background-color: aliceblue;
-    width: 80vmin;
+    /* width: 80vmin; */
     padding: 15px 30px;
     border-radius: 15px;
+}
+
+.pte.options.hidden {
+    opacity: 0;
 }
 
 .pte.options {
@@ -15,7 +19,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     gap: 10px;
-    padding-top: 1px;
+    padding: 2px;
 }
 
 .pte.button {
@@ -38,12 +42,37 @@ body {
 }
 
 .pte.text-input {
-    margin-top: 10px;
     border: 1px solid #dddddd;
-    padding: 20px;
+    padding: 10px 15px;
     height: 20vh;
+    overflow-y: scroll;
+    background-color: rgb(240, 248, 255);
 }
 
 .pte.button.active {
     background-color: rgb(185, 185, 185);
+}
+
+/* Scrollbar */
+.pte.text-input::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+.pte.text-input::-webkit-scrollbar-track {
+background: rgb(215, 215, 215);
+}
+
+.pte.text-input::-webkit-scrollbar-thumb {
+background-color: rgba(66, 66, 66, 0.705);
+border-radius: 10px;
+}
+
+/* Animations */
+@keyframes ani-appearance {
+    0% {transform: translateY(-150%);}
+    100% {transform: translateY(0);}
+}
+@keyframes ani-disappearance {
+    0% {transform: translateY(0);}
+    100% {transform: translateY(-150%);}
 }

@@ -10,81 +10,86 @@
     <link rel="stylesheet" href="static/css/icon.min.css">
 </head>
 <body>
+    <form action="">
     <div class="poor-text-editor">
+        <!-- Options -->
         <div class="pte options">
-            <!-- Options -->
-            <button id="pte-bold" class="pte button format">
+            <button type="button" id="pte-strong" class="pte button format">
                 <i class="ui bold icon"></i>
             </button>
-            <button id="pte-italic" class="pte button format">
+            <button type="button" id="italic" class="pte button format">
                 <i class="ui italic icon"></i>
             </button>
-            <button id="pte-underline" class="pte button format">
+            <button type="button" id="underline" class="pte button format">
                 <i class="ui underline icon"></i>
             </button>
-            <button id="pte-strikethrough" class="pte button format">
+            <button type="button" id="strikethrough" class="pte button format">
                 <i class="ui strikethrough icon"></i>
             </button>
 
             <!-- List -->
-            <button id="pte-orderedlist" class="pte button pte-orderedlist">
+            <button type="button" id="pte-orderedlist" class="pte button pte-orderedlist">
                 <i class="ui list ol disabled icon"></i>
             </button>
-            <button id="pte-unorderedlist" class="pte button pte-unorderedlist">
+            <button type="button" id="pte-unorderedlist" class="pte button pte-unorderedlist">
                 <i class="ui list disabled icon"></i>
             </button>
 
             <!-- Undo/Redo -->
-            <button id="pte-undo" class="pte button pte-undo">
+            <button type="button" id="pte-undo" class="pte button pte-undo">
                 <i class="ui undo disabled icon"></i>
             </button>
-            <button id="pte-redo" class="pte button pte-redo">
+            <button type="button" id="pte-redo" class="pte button pte-redo">
                 <i class="ui redo disabled icon"></i>
             </button>
         </div>
+
+
+        <!-- Text Input -->
+        <div id="pte-text-input" class="pte text-input" contenteditable="true" ></div>
+
+        <!-- Advanced Options -->
         <div class="pte advanced options">
 
             <!-- Alignment -->
-            <button id="pte-alignleft" class="pte button advanced align">
+            <button type="button" id="justifyLeft" class="pte button advanced align">
                 <i class="ui align left icon"></i>
             </button>
-            <button id="pte-aligncenter" class="pte button advanced align">
+            <button type="button" id="pte-aligncenter" class="pte button advanced align">
                 <i class="ui align center icon"></i>
             </button>
-            <button id="pte-alignright" class="pte button advanced align">
+            <button type="button" id="pte-justifyRight" class="pte button advanced align">
                 <i class="ui align right icon"></i>
             </button>
-            <button id="pte-alignjustify" class="pte button advanced align">
+            <button type="button" id="pte-alignjustify" class="pte button advanced align">
                 <i class="ui align justify icon"></i>
             </button>
 
             <!-- Headers -->
-            <select name="pte-headers" id="pte-headers" class="pte select headers">
+            <!-- <select name="pte-headers" id="pte-headers" class="pte select headers">
                 <option value="H1">H1</option>
                 <option value="H2">H2</option>
                 <option value="H3">H3</option>
                 <option value="H4">H4</option>
                 <option value="H5">H5</option>
                 <option value="H6">H6</option>
-            </select>
+            </select> -->
 
 
             
-            <button id="pte-image" class="pte advanced button pte-image">
+            <button type="button" id="pte-image" class="pte advanced button pte-image">
                 <i class="ui image disabled icon"></i>
             </button>
             <!-- Link/Unlink -->
-            <button id="pte-link" class="pte advanced button pte-link">
+            <button type="button" id="pte-link" class="pte advanced button pte-link">
                 <i class="ui linkify disabled icon"></i>
             </button>
-            <button id="pte-unlink" class="pte advanced button pte-unlink">
+            <button type="button" id="pte-unlink" class="pte advanced button pte-unlink">
                 <i class="ui unlink disabled icon"></i>
             </button>
         </div>
-
-        <!-- Text Input -->
-        <div id="pte-text-input" class="pte text-input" contenteditable="true"></div>
     </div>
+    </form>
 </body>
 <script src="static/js/poortexteditor.js"></script>
 </html>
